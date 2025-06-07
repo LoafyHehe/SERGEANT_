@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 103 | Scripts: 13 | Modules: 0 | Tags: 0
+-- Instances: 128 | Scripts: 15 | Modules: 1 | Tags: 0
 local G2L = {};
 
 -- StarterGui.Xeno Int
@@ -18,6 +18,7 @@ G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
 -- StarterGui.Xeno Int.MainDaFrame
 G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["Visible"] = false;
 G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
 G2L["2"]["Size"] = UDim2.new(0, 696, 0, 388);
@@ -821,6 +822,232 @@ G2L["67"] = Instance.new("LocalScript", G2L["4d"]);
 G2L["67"]["Name"] = [[SmoothDrag]];
 
 
+-- StarterGui.Xeno Int.DaKeySystem
+G2L["68"] = Instance.new("Frame", G2L["1"]);
+G2L["68"]["BorderSizePixel"] = 0;
+G2L["68"]["BackgroundColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["68"]["Size"] = UDim2.new(0, 500, 0, 300);
+G2L["68"]["Position"] = UDim2.new(0.29724, 0, 0.24786, 0);
+G2L["68"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["68"]["Name"] = [[DaKeySystem]];
+
+
+-- StarterGui.Xeno Int.DaKeySystem.Keys
+G2L["69"] = Instance.new("Folder", G2L["68"]);
+G2L["69"]["Name"] = [[Keys]];
+
+
+-- StarterGui.Xeno Int.DaKeySystem.Keys.DaK
+G2L["6a"] = Instance.new("ModuleScript", G2L["69"]);
+G2L["6a"]["Name"] = [[DaK]];
+
+
+-- StarterGui.Xeno Int.DaKeySystem.UIGradient
+G2L["6b"] = Instance.new("UIGradient", G2L["68"]);
+G2L["6b"]["Rotation"] = 65;
+G2L["6b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(90, 90, 90)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(168, 168, 168))};
+
+
+-- StarterGui.Xeno Int.DaKeySystem.T
+G2L["6c"] = Instance.new("Frame", G2L["68"]);
+G2L["6c"]["BorderSizePixel"] = 0;
+G2L["6c"]["BackgroundColor3"] = Color3.fromRGB(36, 36, 36);
+G2L["6c"]["Size"] = UDim2.new(0, 200, 0, 39);
+G2L["6c"]["Position"] = UDim2.new(0.3, 0, 0.04, 0);
+G2L["6c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6c"]["Name"] = [[T]];
+
+
+-- StarterGui.Xeno Int.DaKeySystem.T.UIStroke
+G2L["6d"] = Instance.new("UIStroke", G2L["6c"]);
+G2L["6d"]["Color"] = Color3.fromRGB(126, 126, 126);
+
+
+-- StarterGui.Xeno Int.DaKeySystem.T.UICorner
+G2L["6e"] = Instance.new("UICorner", G2L["6c"]);
+
+
+
+-- StarterGui.Xeno Int.DaKeySystem.T.TextLabel
+G2L["6f"] = Instance.new("TextLabel", G2L["6c"]);
+G2L["6f"]["TextWrapped"] = true;
+G2L["6f"]["BorderSizePixel"] = 0;
+G2L["6f"]["TextSize"] = 35;
+G2L["6f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["6f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6f"]["BackgroundTransparency"] = 1;
+G2L["6f"]["RichText"] = true;
+G2L["6f"]["Size"] = UDim2.new(0, 200, 0, 39);
+G2L["6f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6f"]["Text"] = [[Da Key System]];
+G2L["6f"]["Position"] = UDim2.new(0, 0, -0.00872, 0);
+
+
+-- StarterGui.Xeno Int.DaKeySystem.KS
+G2L["70"] = Instance.new("Frame", G2L["68"]);
+G2L["70"]["BorderSizePixel"] = 0;
+G2L["70"]["BackgroundColor3"] = Color3.fromRGB(36, 36, 36);
+G2L["70"]["Size"] = UDim2.new(0, 328, 0, 160);
+G2L["70"]["Position"] = UDim2.new(0.172, 0, 0.23333, 0);
+G2L["70"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["70"]["Name"] = [[KS]];
+
+
+-- StarterGui.Xeno Int.DaKeySystem.KS.UIStroke
+G2L["71"] = Instance.new("UIStroke", G2L["70"]);
+G2L["71"]["Color"] = Color3.fromRGB(126, 126, 126);
+
+
+-- StarterGui.Xeno Int.DaKeySystem.KS.UICorner
+G2L["72"] = Instance.new("UICorner", G2L["70"]);
+
+
+
+-- StarterGui.Xeno Int.DaKeySystem.KS.TextBox
+G2L["73"] = Instance.new("TextBox", G2L["70"]);
+G2L["73"]["CursorPosition"] = -1;
+G2L["73"]["PlaceholderColor3"] = Color3.fromRGB(206, 206, 206);
+G2L["73"]["BorderSizePixel"] = 0;
+G2L["73"]["TextSize"] = 25;
+G2L["73"]["TextColor3"] = Color3.fromRGB(206, 206, 206);
+G2L["73"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26);
+G2L["73"]["RichText"] = true;
+G2L["73"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["73"]["PlaceholderText"] = [[Your Key Here]];
+G2L["73"]["Size"] = UDim2.new(0, 300, 0, 140);
+G2L["73"]["Position"] = UDim2.new(0.04268, 0, 0.0625, 0);
+G2L["73"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["73"]["Text"] = [[]];
+
+
+-- StarterGui.Xeno Int.DaKeySystem.KS.TextBox.UICorner
+G2L["74"] = Instance.new("UICorner", G2L["73"]);
+
+
+
+-- StarterGui.Xeno Int.DaKeySystem.GK
+G2L["75"] = Instance.new("Frame", G2L["68"]);
+G2L["75"]["BorderSizePixel"] = 0;
+G2L["75"]["BackgroundColor3"] = Color3.fromRGB(36, 36, 36);
+G2L["75"]["Size"] = UDim2.new(0, 151, 0, 39);
+G2L["75"]["Position"] = UDim2.new(0.172, 0, 0.81, 0);
+G2L["75"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["75"]["Name"] = [[GK]];
+
+
+-- StarterGui.Xeno Int.DaKeySystem.GK.UIStroke
+G2L["76"] = Instance.new("UIStroke", G2L["75"]);
+G2L["76"]["Color"] = Color3.fromRGB(126, 126, 126);
+
+
+-- StarterGui.Xeno Int.DaKeySystem.GK.UICorner
+G2L["77"] = Instance.new("UICorner", G2L["75"]);
+
+
+
+-- StarterGui.Xeno Int.DaKeySystem.GK.TextButton
+G2L["78"] = Instance.new("TextButton", G2L["75"]);
+G2L["78"]["RichText"] = true;
+G2L["78"]["BorderSizePixel"] = 0;
+G2L["78"]["TextSize"] = 26;
+G2L["78"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["78"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["78"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["78"]["BackgroundTransparency"] = 1;
+G2L["78"]["Size"] = UDim2.new(0, 150, 0, 30);
+G2L["78"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["78"]["Text"] = [[Get Key]];
+G2L["78"]["Position"] = UDim2.new(0, 0, 0.10256, 0);
+
+
+-- StarterGui.Xeno Int.DaKeySystem.SB
+G2L["79"] = Instance.new("Frame", G2L["68"]);
+G2L["79"]["BorderSizePixel"] = 0;
+G2L["79"]["BackgroundColor3"] = Color3.fromRGB(36, 36, 36);
+G2L["79"]["Size"] = UDim2.new(0, 151, 0, 39);
+G2L["79"]["Position"] = UDim2.new(0.526, 0, 0.81, 0);
+G2L["79"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["79"]["Name"] = [[SB]];
+
+
+-- StarterGui.Xeno Int.DaKeySystem.SB.UIStroke
+G2L["7a"] = Instance.new("UIStroke", G2L["79"]);
+G2L["7a"]["Color"] = Color3.fromRGB(126, 126, 126);
+
+
+-- StarterGui.Xeno Int.DaKeySystem.SB.UICorner
+G2L["7b"] = Instance.new("UICorner", G2L["79"]);
+
+
+
+-- StarterGui.Xeno Int.DaKeySystem.SB.TextButton
+G2L["7c"] = Instance.new("TextButton", G2L["79"]);
+G2L["7c"]["RichText"] = true;
+G2L["7c"]["BorderSizePixel"] = 0;
+G2L["7c"]["TextSize"] = 26;
+G2L["7c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["7c"]["BackgroundTransparency"] = 1;
+G2L["7c"]["Size"] = UDim2.new(0, 150, 0, 30);
+G2L["7c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7c"]["Text"] = [[Sumbit]];
+G2L["7c"]["Position"] = UDim2.new(0, 0, 0.10256, 0);
+
+
+-- StarterGui.Xeno Int.DaKeySystem.SB.TextButton.LocalScript
+G2L["7d"] = Instance.new("LocalScript", G2L["7c"]);
+
+
+
+-- StarterGui.Xeno Int.DaKeySystem.SmoothDrag
+G2L["7e"] = Instance.new("LocalScript", G2L["68"]);
+G2L["7e"]["Name"] = [[SmoothDrag]];
+
+
+-- StarterGui.Xeno Int.DaKeySystem.UICorner
+G2L["7f"] = Instance.new("UICorner", G2L["68"]);
+G2L["7f"]["CornerRadius"] = UDim.new(0, 4);
+
+
+-- StarterGui.Xeno Int.DaKeySystem.UIStroke
+G2L["80"] = Instance.new("UIStroke", G2L["68"]);
+G2L["80"]["Color"] = Color3.fromRGB(255, 0, 0);
+
+
+-- Require G2L wrapper
+local G2L_REQUIRE = require;
+local G2L_MODULES = {};
+local function require(Module:ModuleScript)
+    local ModuleState = G2L_MODULES[Module];
+    if ModuleState then
+        if not ModuleState.Required then
+            ModuleState.Required = true;
+            ModuleState.Value = ModuleState.Closure();
+        end
+        return ModuleState.Value;
+    end;
+    return G2L_REQUIRE(Module);
+end
+
+G2L_MODULES[G2L["6a"]] = {
+Closure = function()
+    local script = G2L["6a"];local KeyFormat = {}
+
+local DaKey = {
+	Da1 = 'sg-7x9Fk2pQmR4vN8yL',
+	Da2 = 'sg-BnT5sW3zY6VcX1rD',
+	Da3 = 'sg-KjH8qP4mN7bG2tF6',
+	Da4 = 'sg-3Ld9wZvX6yR8pT5s',
+	Da5 = 'sg-Qm4nF7kD2pB9vR3x'
+}
+
+KeyFormat.DaKey = DaKey
+
+return KeyFormat
+end;
+};
 -- StarterGui.Xeno Int.MainDaFrame.Bottom.In.ImageButton.LocalScript
 local function C_b()
 local script = G2L["b"];
@@ -1225,5 +1452,96 @@ local script = G2L["67"];
 	
 end;
 task.spawn(C_67);
+-- StarterGui.Xeno Int.DaKeySystem.SB.TextButton.LocalScript
+local function C_7d()
+local script = G2L["7d"];
+	local T = script.Parent
+	local Valid = require(script.Parent.Parent.Parent.Keys.DaK.Source)
+	local E = script.Parent.Parent.Parent.KS.TextBox
+	
+	T.MouseButton1Click:Connect(function()
+		local keyValid = false
+		local enteredKey = E.Text
+	
+		for _, key in pairs(Valid.DaKey) do
+			if enteredKey == key then
+				keyValid = true
+				break
+			end
+		end
+	
+		if keyValid then
+			E.Text = 'Key Success!'
+			task.wait(0.2)
+			E.Text = 'Loading.'
+			task.wait(0.05)
+			E.Text = 'Loading..'
+			task.wait(0.05)
+			E.Text = 'Loading...'
+			task.wait(0.35)
+			script.Parent.Parent.Parent.Parent.DaKeySystem.Visible = false
+			task.wait(0.35)
+			script.Parent.Parent.Parent.Parent.MainDaFrame.Visible = true
+		else
+			E.Text = 'Invalid Key!'
+		end
+	end)
+end;
+task.spawn(C_7d);
+-- StarterGui.Xeno Int.DaKeySystem.SmoothDrag
+local function C_7e()
+local script = G2L["7e"];
+	-- Need help? Check me out on the devforum!
+	-- Link: https://devforum.roblox.com/t/smooth-dragging-easily-drag-your-frames/2508276
+	
+	local Drag = script.Parent
+	local Drag2 = script.Parent.SB
+	local Drag3 = script.Parent.T
+	local Drag4 = script.Parent.KS
+	local Drag5 = script.Parent.GK
+	gsCoreGui = game:GetService("CoreGui")
+	gsTween = game:GetService("TweenService")
+	local UserInputService = game:GetService("UserInputService")
+		local dragging
+		local dragInput
+		local dragStart
+		local startPos
+		local function update(input)
+			local delta = input.Position - dragStart
+			local dragTime = 0.04
+			local SmoothDrag = {}
+			SmoothDrag.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+			local dragSmoothFunction = gsTween:Create(Drag, TweenInfo.new(dragTime, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), SmoothDrag)
+			dragSmoothFunction:Play()
+		end
+		Drag.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+				dragging = true
+				dragStart = input.Position
+				startPos = Drag.Position
+				startPos = Drag2.Position
+				startPos = Drag3.Position
+				startPos = Drag4.Position
+				startPos = Drag5.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragging = false
+					end
+				end)
+			end
+		end)
+		Drag.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		UserInputService.InputChanged:Connect(function(input)
+			if input == dragInput and dragging and Drag.Size then
+				update(input)
+			end
+		end)
+	
+end;
+task.spawn(C_7e);
 
 return G2L["1"], require;
